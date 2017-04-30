@@ -67,7 +67,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })   
         .state('education.srikdu', {
             url: '/srikdu',            
-            template: '<h3>SEKOLAH SRI KDU</h3><h4>International Baccalaureatte Diploma Programme</h4><p>Culture shock... they say.</p>'
+            template: '<h3>SEKOLAH SRI KDU</h3><h4>International Baccalaureatte Diploma Programme</h4><p>had too much fun here...</p>'
         })      
 });
 
