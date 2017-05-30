@@ -39,7 +39,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
         .state('skills.webdev', {
             url: '/webdev',   
-            template: '<p>currently undergoing front-end web development training under <b><span style="color:orange">REKA studios</span></b>. about 3 weeks in, and now i can fairly understand html and css; know how to incorporate and work with bootstrap, jquery & angularjs in producing my own webpage. not much really... just enough to produce this simple page you are currently looking at! :)</p>'         
+            template: '<p>currently undergoing front-end web development training under <b><span style="color:orange">REKA studios</span></b> and now i can fairly understand html and css; know how to incorporate and work with bootstrap and JQuery framework, and also angularjs in producing my own responsive webpage. not much really... just enough to produce this simple page you are currently looking at! :)</p>'         
         })
         .state('skills.geophy', {
             url: '/geophy',   
