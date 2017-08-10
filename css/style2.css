@@ -29,7 +29,7 @@ h2,h3 {
 }
 
 hr {
-  border-color: black;
+  border-color: #f2af00;
   margin: 0;
   opacity: 0.3;
 }
@@ -44,79 +44,66 @@ img:hover {
   opacity: 0.5;
 }
 
-
-
-.fadeIn.ng-leave {}
-.fadeIn.ng-enter {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
 /* navigation */
 .navbar-default {
-    background: white;
-    color: black;
+    background: #fff;
     border: none;
     box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
     margin: 0 !important;
   }
 .navbar-default .navbar-brand {
-    background: black;
-    color: #f2af00;
+    background: #dc5034;
+    color: #fff;
     font-weight: bold;
     font-size: 30px;
     line-height: 50px;
     height: 90px;
     margin: 0;
     padding: 20px 20px 40px 20px;
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
    }
-
-.navbar-default .navbar-brand a {
-  text-decoration: none;
-  color: #f2af00;
+.navbar-brand:hover, .navbar-brand:clicked {
+  background: dc5034;
 }
-
-.navbar-default .navbar-brand a:hover,
-.navbar-default .navbar-brand a.hover {
-  text-decoration: none;
-  color: #f2af00;
-}
-
-.navbar-default .navbar-brand a:focus, 
-.navbar-default .navbar-brand a.focus, {
-  outline: none;
-}
-
 .navbar-default .navbar-nav li a {
     border-right: 1px solid #f9f9f9;
     color: #202020;
-    font-weight: bold;
+     font-weight: bold;
     padding-right: 40px;
     padding-left: 40px;
     line-height: 60px;
+	
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
   }
-
-.navbar-default .navbar-nav li a:hover,
-.navbar-default .navbar-nav li a.hover { 
-  color: #dc5034;
+.navbar-default .navbar-nav > li > a:clicked,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f2af00;
 }
-
-.navbar-default .navbar-nav li a:active,
-.navbar-default .navbar-nav li a.active {
-  color: #dc5034; 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f2af00;
+  background-color: transparent;
 }
-
-.navbar-default .navbar-nav li a:focus,
-.navbar-default .navbar-nav li a.focus {
-  color: #dc5034; 
-  outline: none;
+.navbar-default .navbar-toggle {
+    border: none;
+    padding-top: 30px;
 }
-
-
+.navbar-default .navbar-toggle .icon-bar {
+    background: #dc5034;
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+  background-color: transparent 
+}
 
 /* home section */
 #home {
@@ -158,16 +145,13 @@ img:hover {
   color: #fff;
 }
 
-/* experience section */
+/* service section */
 #experience {
   padding-top: 100px;
   padding-bottom: 80px;
 }
-#experience .col-md-12 {
-  text-align: center;
-}
 #experience h2 {
-  border-right: 2px solid #f2af00;
+  border-left: 2px solid #f2af00;
   display: inline-block;
   padding: 20px;
 }
@@ -184,55 +168,7 @@ img:hover {
   padding: 40px;
 }
 
-.arrow-next {
-  position: absolute;
-  right: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: solid;  
-  background-color:  #f2af00;
-  color: white;
-  opacity: 0.3;
-  bottom:50px;
-  margin-top:50px;
-  text-decoration: none;  
-  text-align: center;
-  width: 100px;
-} 
-
-.arrow-next li a:focus,
-.arrow-next li a.focus {
-  outline: 0;
-  text-decoration: none;
-}
-
-.arrow-prev {
-  position: absolute;
-  left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: solid;  
-  background-color:  #f2af00;
-  color: white;
-  opacity: 0.3;
-  bottom:50px;
-  margin-top:50px;
-  text-decoration: none; 
-  text-align: center;
-  width: 100px; 
-} 
-
-.arrow-prev li a:focus,
-.arrow-prev li a.focus {
-  outline: 0;
-  text-decoration: none;
-}
-
-
-/* animations */
-
-
-/* education section */
+/* about section */
 #education {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -254,28 +190,14 @@ img:hover {
   padding-bottom: 10px;
 }
 
-#education .fadeIn {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
 
-       
-#education .eduCont.ng-leave  {}
-#education .eduCont.ng-enter  {  
-    -webkit-animation:slideInRight  0.5s both ease-in;
-  -moz-animation:slideInRight 0.5s both ease-in;
-  animation:slideInRight  0.5s both ease-in;    
-}
+
 
 
 /* Skills section */
 #skills {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 100px;
   }
 #skills h2 {
@@ -309,15 +231,6 @@ img:hover {
     text-decoration: none;
 }
 
-#skills a:focus,
-#skills a.focus {
-    background: #f2af00;
-    border-color: transparent;
-    color: #ffffff;
-    text-decoration: none;
-    outline: none;
-}
-
 #skills .thumbnail{        
     width: 150px;     
     height: 150px;
@@ -334,16 +247,6 @@ img:hover {
     
     vertical-align: middle;
     align-items: middle;
-}
-
-#skills .skillDesc.ng-leave {}
-#skills .skillDesc.ng-enter {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slideInUp, fadeIn;
-  animation-name: slideInUp, fadeIn;
 }
 
 
@@ -418,7 +321,7 @@ img:hover {
 
 /* contact section */
 #contact {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 10px;
   text-align: center;
 }
@@ -518,120 +421,57 @@ footer span {
 
 /* copyright section */
 .copyright {
-  position: fixed;
-  background-color: white;
-  padding-top: 5px;
-  padding-bottom: 0px;
-  position:fixed;
-  bottom:0;
-  width:100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.arrow {
-  position: fixed;
-  background-color: black;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  position:fixed;
-  bottom:0;
-  width:100%;
-  text-align: center;
+/* scrolltop section */
+.go-top 
+  {
+    background-color: #f2af00;
+    font-size: 26px;
+    bottom: 2em;
+    right: 2em;
+    color: #FFF;
+    display: none;
+    position: fixed;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+	transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+  }
+.go-top:hover
+  {
+    background-color: #444;
+	color: #fff;
+  }
+
+/* media 960 */
+@media only screen and ( max-width: 980px ) {
+  .navbar-default .navbar-nav li a {
+    padding-right: 20px;
+    padding-left: 40px;
+    line-height: 30px;
+  }
 }
 
-.slider-nav {
-  text-align: center;
+/* media 360 */
+@media only screen and ( max-width: 360px ) {
+  #team h4 {
+    padding-bottom: 30px;
+  }
 }
 
 
 
-
-
-.slider-dots {
-  list-style: none;
-  display: inline-block;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.slider-dots li {
-  color: #bbbcbc;
-  display: inline;
-  font-size: 30px;
-  margin-right: 5px;
-}
-
-.slider-dots li.active-dot {
-  color: #363636;
-}
-
-/* AngularJS cloak :- load only when finish */
+/* AngularJS cloac :- load only when finish */
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
-
-
-/* animations */
-
-@-webkit-keyframes fadeIn {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-         
-@keyframes fadeIn {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-
-@-webkit-keyframes fadeOut {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-         
-@keyframes fadeOut {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-
-@keyframes slideInRight {
-0% {opacity: 0;}
-100% {opacity: 1;}
-from  { transform:translateX(50%); }
-to    { transform: translateX(0); }
-}
-
-@-webkit-keyframes slideInRight {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-  from  { -webkit-transform:translateX(50%); }
-  to    { -webkit-transform: translateX(0); }
-}
-
-@keyframes slideOutLeft {
-  to    { transform: translateX(-100%); }
-}
-
-@-moz-keyframes slideOutLeft {  
-  to    { -moz-transform: translateX(-100%); }
-}
-
-@-webkit-keyframes slideOutLeft {
-  to    { -webkit-transform: translateX(-100%); }
-}
-
-/* slide in from the bottom */
-@keyframes slideInUp {
-  from  { transform:translateY(100%); }
-  to    { transform: translateY(0); }
-}
-@-moz-keyframes slideInUp {
-  from  { -moz-transform:translateY(100%); }
-  to    { -moz-transform: translateY(0); }
-}
-@-webkit-keyframes slideInUp {
-  from  { -webkit-transform:translateY(100%); }
-  to    { -webkit-transform: translateY(0); }
-}
-
-
