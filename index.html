@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Lion's Test</title>
+
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slideshow.css">
+
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- AngularJS libraries -->
+    <script src="js/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+</head>
+
+<body ng-app='LionApp' ng-controller='appController' data-spy="scroll" data-target=".navbar-collapse">
+	
+	<!-- Navigation Panel -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<p style="background-color: #ff2927;">&nbsp;</p>
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<div class="w3_navigation_pos">
+	            	<a href="index.html"><img src="images/main_logo.jpg" style="border: 1px solid grey"></a>
+	          	</div>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#photos" class="smoothScroll">Photos</a></li>
+					<li><a href="#blog" class="smoothScroll">Blog</a></li>
+					<li><a href="#form" class="smoothScroll">Form</a></li>
+					<li><a href="#places" class="smoothScroll">Places</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>		
+
+	<!-- Instructions -->
+	<div class="container instruct">
+		<a><p>&nbsp;+ instructions</p></a>
+	</div>
+	<!-- Photos section -->
+	<div id="photos">
+		<div class="container">			
+			<div class="col-md-12 col-sm-12">
+				<h2>Photos</h2>
+				<hr/>
+			</div>
+			<div class="col-md-12 col-sm-12" style="margin-top: 5%">	
+				<div id="slideshow" >
+					<!-- Images in the gallery -->
+				    <div id="img-1" data-img-id="1" class="img-wrapper active" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-2" data-img-id="2" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-3" data-img-id="3" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-4" data-img-id="4" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-1" data-img-id="5" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-2" data-img-id="6" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-3" data-img-id="7" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+				    <div id="img-4" data-img-id="8" class="img-wrapper" style="background-image: url('images/img1.jpg')"></div>
+
+					<!-- Sidescrolling thumbnails -->
+				    <div class="thumbs-container bottom">
+				    	<div id="prev-btn" class="prev">
+				    		<i class="fa fa-chevron-left"></i>
+				    	</div>
+						<ul class="thumbs">
+							<li data-thumb-id="1" class="thumb active" style="background-image: url('images/img1-thumb.jpg')"></li>
+							<li data-thumb-id="2" class="thumb" style="background-image: url('images/img2-thumb.jpg')"></li>
+							<li data-thumb-id="3" class="thumb" style="background-image: url('images/img3-thumb.jpg')"></li>
+							<li data-thumb-id="4" class="thumb" style="background-image: url('images/img4-thumb.jpg')"></li>
+							<li data-thumb-id="5" class="thumb" style="background-image: url('images/img5-thumb.jpg')"></li>
+							<li data-thumb-id="6" class="thumb" style="background-image: url('images/img6-thumb.jpg')"></li>
+							<li data-thumb-id="7" class="thumb" style="background-image: url('images/img7-thumb.jpg')"></li>
+							<li data-thumb-id="8" class="thumb" style="background-image: url('images/img8-thumb.jpg')"></li>
+						</ul>
+				    	<div id="next-btn" class="next">
+				    		<i class="fa fa-chevron-right fa-3x"></i>
+				    	</div>
+				    </div>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<!-- Blog section -->
+	<div id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<h2>Blog</h2>
+					<hr/>
+				</div>
+				<div class="blog_content">
+					<div class="col-sm-4">
+						<img src="images/blog_1.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id sem nec nisl condimentum viverra a et velit. Donec eu tortor mi. Aliquam erat volutpat.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="images/blog_2.jpg">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id sem nec nisl condimentum viverra a et velit. Donec eu tortor mi. Aliquam erat volutpat.</p>
+					</div>
+					<div class="col-sm-4">
+						<img src="images/blog_3.jpg">
+						<p style="color: red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id sem nec nisl condimentum viverra a et velit. Donec eu tortor mi. Aliquam erat volutpat.</p>
+					</div>	
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<!-- Forms section -->
+	<div id="form">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<h2>Form</h2>
+					<hr/>
+				</div>
+				<div class="form_content">
+					<div class="col-sm-12">
+						<p>The fields with * are obligatory</p>
+						<div class="mail">  
+							<p>*E-mail:</p>  
+							<form name="form1" action="#">   
+							<input class="form-style" type='text' name='text1'/><br>						
+							</form>  
+						</div> 
+						<div >  
+							<p>*Date:</p>  
+							<form name="form2" action="#">   
+							<input class="form-style" type='date' name='date2'/>
+							</form>  
+						</div> 
+						  <p>*Country:</p>  
+						  <select ng-model="country" ng-options="country.name for country in countries track by country.code" class="form-style">
+						  <option value="">-- Select a Country --</option>
+						  </select><br>
+						<span class="submit"><input style="margin-top: 3%; color: white;   background-color: #f68b20; padding: 0.5%; width: 110px; border: none; border-radius: 10px; box-shadow: 1px 1px 1px #707070;" type="submit" name="submit" value="Send" onclick="ValidateEmail(document.form1.text1)"/></span>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<!-- Places section -->
+	<div id="places">
+		<div class="container">
+			<div class="row">			
+				<div class="col-md-12 col-sm-12">
+					<h2>Places</h2>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<div class="places-link">
+						<a class="selected opc-main-bg" data-toggle="portfilter" data-target="all">All</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="California">California</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Tennessee">Tennessee</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Pennsylvania">Pennsylvania</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Texas">Texas</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Illinois">Illinois</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Florida">Florida</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Delaware">Delaware</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="North Carolina">North Carolina</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Indiana">Indiana</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Louisiana">Louisiana</a>
+						<a class="opc-main-bg" data-toggle="portfilter" data-target="Oklahoma">Oklahoma</a>
+					</div>
+				</div>	
+
+			    <ul style="padding: 5% 15px 0 15px;">
+			      	<li class="col-xs-12 col-sm-4" ng-repeat="app in apps" data-tag='{{app.state}}'>
+			      	<div class="places-box">		   
+				      	<div class="image-container"><img class="img-post" ng-src="{{app.image}}" alt="Lion's Test.jpg" height=5></div><br>
+						<p data-tag='{{app.state}}'><b> {{app.name}} </b></p>
+						<p data-tag='{{app.state}}'> {{app.address}} </p>
+						<p data-tag='{{app.state}}'> {{app.state}} </p><br>
+						<p><b>Operating Hours:</b></p>
+						<p data-tag='{{app.state}}'> {{app.operation_hours}}</p><br>	
+						<div style="border: 1px solid #1a0154;"></div><br>
+						<p><b>Telephone:</b></p>
+						<p data-tag='{{app.state}}'> {{app.phone}}</p>	
+						<div class="dir-style"><a><b>Get Directions</b></a></div>	
+					</div>			
+			      	</li>	
+			    </ul>
+				<div class="push"></div>		       	
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<!-- divider section -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12" >
+			<hr>
+		</div>
+	</div>
+</div>
+
+<!-- Footer section -->
+<div class="footer">
+	<div class="container">
+			<ul>
+				<li class="pull-left"><img src="lion_footer.png"></li>
+				<li class="pull-right">
+					<p style="text-align: right; margin: 0">Suite 17-1, Hampshire Place,</p>
+					<p style="text-align: right; margin: 0">No.1, Jalan Mayang Sari,</p>
+					<p style="text-align: right; margin: 0">50450, Kuala Lumpur Malaysia</p>
+					<p style="text-align: right; margin: 0">E: info@lionandlion.com</p>
+					<p style="text-align: right; margin: 0">T: +60327800950</p>
+				</li>
+			</ul>
+	</div>
+</div>
+
+<!-- scrolltop section -->
+<a href="#top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- javascript js -->	
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/bootstrap-portfilter.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+
+<!-- E-mail validator -->
+<script>
+	function ValidateEmail(inputText){  
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+		if(inputText.value.match(mailformat)){  
+				document.form1.text1.focus();  
+			return true;  
+		}  
+		else{  
+			alert("You have entered an invalid email address!");  
+			document.form1.text1.focus();  
+			return false;  
+		}  
+    }  
+</script>
+
+<!-- AngularJS Module -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
