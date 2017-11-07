@@ -1,0 +1,113 @@
+.content-services{
+	margin-top: 70px;
+	padding: 0 30px;
+	@media (min-width: $screen-md-min){
+		padding: 0;
+	}
+}
+
+.service-list{
+	display: block;
+	@media (min-width: $screen-md-min){
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		}
+	li{
+		@extend .custom-bullet;
+		padding: 0 0 15px 45px;
+		@media (min-width: $screen-md-min){
+			width: 35%;
+			height: 50px;
+		}
+	}
+}
+
+.custom-bullet{
+	background: url('../images/list-arrow.png') no-repeat;
+}
+
+.norm{
+	border: 1px solid black;
+	@extend .service-list;
+	display: block;
+	li{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+}
+
+//Our Approach
+.content-list{
+	@extend .service-list;
+	justify-content: flex-start;
+	@media (min-width: $screen-md-min){
+		height: 650px;
+	}
+	dl{
+		padding: 15px 0;
+		@media (min-width: $screen-md-min){
+			width: 50%;
+		}
+		img{
+			vertical-align: top;
+			@extend .hidden-xs;
+		}
+	}
+	dt, address, .logo{
+		margin-bottom: 15px;
+		display: inline-block;
+		@media (min-width: $screen-sm-min){
+			width: calc(100% - 90px);
+			margin-left: 18px;
+		}
+	}
+	dd{
+		@media (min-width: $screen-sm-min){
+			margin: 0 45px;
+			text-align: justify;
+		}
+	}
+}
+
+.address, .logo{
+	th{
+		vertical-align: top;
+		&:first-child{
+			padding-right: 15px;
+		}
+		&:nth-child(2){
+			padding-right: 15px;
+		}
+	}
+}
+
+//About Us
+#about{
+	@media (min-width: $screen-md-min){
+		.content-list{
+			height: 0;
+			flex-direction: row;
+			align-items: flex-start;			
+			dl{
+				margin-bottom: 30px;
+				&:nth-child(-n+2){
+					margin-bottom: 0;
+				}
+				&:nth-child(2n+1){
+					width: 61%;
+				}
+				&:nth-child(2n + 2){
+					width: 39%;
+					height: 133px;
+					.text{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

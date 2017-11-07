@@ -1,0 +1,122 @@
+/* FONTS ------------------------------------------------------------*/
+
+
+@include font-face("Copper", "../fonts/Copperplate-Gothic-Bo-Re", 700);
+@include font-face("Bank", "../fonts/Bank-Gothic-Lt", 400);
+@include font-face("Bank", "../fonts/Bank-Gothic-Bo", 700);
+@include font-face("Eras", "../fonts/ERASDEMI", 400);
+
+/* BASE ------------------------------------------------------------*/
+
+html{
+	font-size: 16px;
+}
+
+body{
+	// background: $gray-light;
+	// font-size: 16px;
+	font-family: "Bank";
+	// color: $text-color;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.main-container{
+	//padding-top: 78px;
+}
+
+/* HELPERS ------------------------------------------------------------*/
+
+// .form-group{
+// 	.input, .select{
+// 		width: 100%;
+// 	}
+// }
+
+.list-unstyled{
+	margin-bottom: 0;
+}
+
+$space-base: 15px;
+
+.space-margin{
+	margin-top: $space-base;
+	margin-bottom: $space-base;
+	&-2x{
+		margin-top: $space-base * 2;
+		margin-bottom: $space-base * 2;
+	}
+	&-3x{
+		margin-top: $space-base * 3;
+		margin-bottom: $space-base * 3;
+	}
+}
+
+.mt-0{
+	margin-top: 0 !important;
+}
+
+.mb-0{
+	margin-bottom: 0 !important;
+}
+
+.space-padding{
+	padding-top: $space-base;
+	padding-bottom: $space-base;
+	&-2x{
+		padding-top: $space-base * 2;
+		padding-bottom: $space-base * 2;
+	}
+	&-3x{
+		padding-top: $space-base * 3;
+		padding-bottom: $space-base * 3;
+	}
+}
+
+.mt-0{
+	padding-top: 0 !important;
+}
+
+.mb-0{
+	padding-bottom: 0 !important;
+}
+
+ul.list-unstyled{
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style-type: none;
+}
+
+dl,dt,dd{
+	@extend .list-unstyled;
+}
+
+/* TITLES ------------------------------------------------------------*/
+
+.title-medium{
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.title-text{
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.title-header{
+	font-weight: 700;
+	text-align: center;
+	background-image: url('../images/header-bg.jpg');
+	background-size: cover;
+	color: black;
+	padding: 10px 0;
+	margin-top: 30px;
+}
+
+
+/* TRANSITIONS ------------------------------------------------------------*/
+
+.trans{
+	transition: all 0.25s ease-in-out;
+}

@@ -1,0 +1,92 @@
+.homepage{
+	margin-top: 70px;
+	.content{
+		@media (min-width: $screen-sm-min){
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+	}
+}
+
+.display-table{
+	display: block;
+	@media (min-width: $screen-md-min){
+	    display: table;
+	    table-layout: fixed;
+	    width: 100%;
+	}
+}
+
+.valign{
+	@media (min-width: $screen-md-min){
+	    display: table-cell;
+	    vertical-align: middle;
+	    float: none;
+	}
+    text-align: center;
+}
+
+.main-figure{
+	position: relative;
+    border-radius: 16px;
+    background-clip: padding-box;
+    @media (min-width: $screen-lg-min){
+    	width: 80%;
+    	margin: 0 auto;
+	}
+	img{
+		width: 100%;
+		border-radius: 15px;
+	}
+	&::after{
+	    position: absolute;
+	    top: -4px; bottom: -4px;
+	    left: -4px; right: -4px;
+	    background: radial-gradient(black, green);
+	    content: '';
+	    z-index: -1;
+	    border-radius: 16px;
+	}
+}
+
+.side-link{	
+	background: #107c1b; /* For browsers that do not support gradients */
+ 	background: linear-gradient(#107c1b, #97fe66); /* Standard syntax */
+	border-radius: 45px;
+	text-align: center;
+	padding: 5px 0;
+	ul{
+		border-radius: 40px;
+		list-style-type: none;
+		margin: 30px 0 0;
+		padding: 30px 45px;
+		background: #107c1b; /* For browsers that do not support gradients */
+ 	    background: linear-gradient(#107c1b, #12c20d); /* Standard syntax */
+		li{
+			padding: 10px 15px;
+			border-bottom: 2px solid #afd5b0;
+			&:last-child{
+				border-bottom: none;
+			}
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				color: black;
+			}
+		}
+	}
+	.side-link-title{
+		padding: 30px 0 0;
+		background: #bddfbc;
+		background: radial-gradient(#bddfbc, #77b67b);
+		margin: 0 5px;
+		border-radius: 40px;
+		.title{
+			text-transform: uppercase;
+			font-size: 36px;
+			color: black;
+			font-weight: 700;
+		}		
+	}
+}

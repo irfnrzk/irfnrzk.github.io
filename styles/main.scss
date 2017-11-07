@@ -1,0 +1,47 @@
+/*!
+Theme Name: Lion Theme
+
+Author: Lion & Lion Malaysia Tech Team
+Author URI: http://lionandlion.com
+
+Description: This theme was produced by Lion & Lion +603 2780 0950
+Version: 1.0 (bower, bootstrap, gulp)
+
+Project author:
+Project: 
+Date: 03/2017
+*/
+
+@import "variables";
+
+// bower:scss
+@import "../libs/bourbon/app/assets/stylesheets/bourbon";
+@import "../libs/font-awesome/scss/font-awesome";
+@import "bootstrap";
+// endbower
+
+//BASE PLUGINS
+
+//GLOBAL
+@import "global";
+
+//SITE BASE
+@import "_header";
+@import "_footer";
+@import "home";
+@import "services";
+
+
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+}

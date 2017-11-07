@@ -1,0 +1,24 @@
+{
+  "name": "lion-base-microsite",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "modernizr": "~2.8.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "bourbon": "^4.3.3",
+    "jquery-1.12.4.min": "https://code.jquery.com/jquery-1.12.4.min.js"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
